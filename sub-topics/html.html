@@ -1,0 +1,646 @@
+<html>
+<head>
+    <title>HTML Concept</title>
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+
+        body {
+            background-image: url('../img/content-cover.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            text-decoration: none;
+        } a:hover {
+            text-decoration: underline;
+        }
+
+        .jumbotron {
+            text-align: center;
+            color: white;
+            padding-top: 150px;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        } .jumbotron h1 {
+            font-size: 1200%;
+        }
+
+        .container {
+          padding: 50px 0px 50px 0px;
+        }
+
+        .format-description {
+          width: 1000px;
+        }
+
+        .float-right {
+          float: right;
+        } .float-left {
+          float: left;
+        }
+
+        #table-container {
+          overflow: auto;
+          margin-top: 70px;
+          width: 850px;
+          height: 370px;
+          border: 1px solid black;
+          padding: 20px;
+          margin-bottom: 30px
+        } #table-container table {
+          text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="btn btn-success">Home</button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Javascript</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  <button class="btn btn-secondary">Go Back</button>
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div id="the-content">
+    
+
+            <div class="jumbotron jumbotron-fluid" style="height: 91%;">
+                <div class="container">
+                  <h1 class="display-7">HTML</h1>
+                  <p class="lead">The Skeleton for a Web Page</p>
+                </div>
+            </div>
+
+            <div style="background-color: antiquewhite; width: 100%;">
+            
+            
+              <div class="container">
+
+
+                <!-- HTML INTRODUCTION -->
+                <div class="card text-center">
+                  <div class="card-header" style="font-weight: bold;">
+                    HTML INTRODUCTION
+                  </div>
+                  <center>
+                    <div class="card-body">
+                      <div class="row card" style="width: 500px;padding:10px;text-align: left;">
+                        <h3><center> What is HTML?</center></h3>
+                        <p>
+                          <ul>
+                            <li>HTML stands for Hyper Text Markup Language</li>
+                            <li>HTML is the standard markup language for creating Web pages</li>
+                            <li>HTML describes the structure of a Web page</li>
+                            <li>HTML consists of a series of elements</li>
+                            <li>HTML elements tell the browser how to display the content</li>
+                            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                          </ul>
+                        </p>
+                      </div> 
+                    </div>
+
+                    <div class="card" style="width: 90%;margin: 70px;padding:10px">
+                      <div class="card-body">
+                        <div class="row">
+                          <h3>A Simple HTML Document</h3>
+                            <center><img src="../img/html/intro-1.png" width="200" style="float:left;padding:10px;border:1px solid grey; margin:20px;"></center>
+                            <ol style="text-align:left;position: absolute; top: 90px; right: 20px;width:900px">
+                              <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
+                              <li>The &lt;html&gt; element is the root element of an HTML page</li>
+                              <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+                              <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                              <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                              <li>The &lt;h1&gt; element defines a large heading</li>
+                              <li>The &lt;p&gt; element defines a paragraph</li>
+                            </ol>
+                        </div>
+                        <div class="row">
+                          <center>
+                            <div class="card" style="width:600px;padding:20px">
+                              <h3>What is an HTML Element?</h3>
+                            <p>An HTML element is defined by a start tag, some content, and an end tag:
+                              <br>
+                              <strong>&lt;tagname&gt;</strong> Content goes here... <strong>&lt;/tagname&gt;</strong>
+                              <br>
+                              The HTML element is everything from the start tag to the end tag:
+                              <br>
+                              <strong>&lt;h1&gt;</strong>My First Heading<strong>&lt;/h1&gt;</strong>
+                              <br>
+                              <strong>&lt;p&gt;</strong>My first paragraph.<strong>&lt;/p&gt;</strong>
+                            </p>
+                            </div>
+                          </center>
+                        </div>
+
+                        <div class="row" style="margin-top: 50px">
+                          <center>
+                            <div class="card" style="padding:20px;width:900px">
+                              <center><img src="../img/html/intro-2.png" width="300" style="margin-bottom:20px;border: 2px solid grey;"></center>
+                              <h3>Web Browsers</h3>
+                              <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+                                <br>
+                                A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+                              </div>
+                          </center>
+                        </div>
+
+                        <div class="row" style="margin-top: 50px">
+                          <center>
+                            <div class="card" style="padding:20px;width:900px">
+                              <h3>HTML Page Structure</h3>
+                              <p>Below is a visualization of an HTML page structure</p>
+                              <div class="card-body">
+                                <img src="../img/html/intro-3.png" width="800px">
+                              </div>
+                            </div>
+                          </center> 
+                        </div>
+
+                        <div class="row" style="margin-top: 50px">
+                          <center>
+                            <div class="card" style="padding:20px;width:600px">
+                              <h3>History of HTML</h3>
+                              <div class="card-body">
+                                <table class="table table-bordered" style="width:500px">
+                                  <tbody>
+                                    <tr>
+                                      <th class="bg-secondary">Year</th>
+                                      <th class="bg-secondary">Version</th>
+                                    </tr>
+                                    <tr>
+                                      <td>1989</td>
+                                      <td>Tim Berners-Lee invented www</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1991</td>
+                                      <td>Tim Berners-Lee invented HTML</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1993</td>
+                                      <td>Dave Raggett drafted HTML+</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1995</td>
+                                      <td>HTML Working Group defined HTML 2.0</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1997</td>
+                                      <td>W3C Recommendation: HTML 3.2</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1999</td>
+                                      <td>W3C Recommendation: HTML 4.01</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2000</td>
+                                      <td>W3C Recommendation: XHTML 1.0/td>
+                                    </tr>
+                                    <tr>
+                                      <td>2008</td>
+                                      <td>WHATWG HTML5 First Public Draft</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2012</td>
+                                      <td>WHATWG HTML5 Living Standard</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2014</td>
+                                      <td>W3C Recommendation: HTML5</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2016</td>
+                                      <td>W3C Candidate Recommendation: HTML 5.1</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2017</td>
+                                      <td>W3C Recommendation: HTML5.1 2nd Edition</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2017</td>
+                                      <td>W3C Recommendation: HTML5.2</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </center>
+                        </div>
+                      </div>
+                    </div>
+                  </center>
+              </div>
+
+
+
+              <!-- HTML EDITORS -->
+              <div class="card text-center" style="margin-top:50px">
+                <div class="card-header" style="font-weight: bold;">
+                  HTML EDITORS
+                </div>
+                <center>
+                  <div class="row">
+                    <div class="card" style="width: 18rem; margin: 70px;position: relative; right: -450px">
+                        <div class="card-body">
+                          <h5 class="card-title">What is Multimedia?</h5>
+                          <p class="card-text">
+                            <ol style="text-align:left">  
+                              <li>Open Notepad <strong>(Windows)</strong></li>
+                              <li>Open TextEdit <strong>(Mac OS)</strong></li>
+                              <li><strong>or</strong> Visual Studio Code</li>
+                              <li>Write Some HTML</li>
+                              <li>Save the HTML Page</li>
+                              <li>View the HTML Page in Your Browser</li>
+                            </ol>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </center>
+              </div>   
+              
+              
+              <!-- HTML BASIC -->
+              <div class="card text-center" style="margin-top:50px">
+                <div class="card-header" style="font-weight: bold;">
+                  HTML BASIC CODES
+                </div>
+                <div class="card-body">
+                  <img src="../img/html/basic1.png" style="border: 1px solid grey;margin-right:40px" height="200">
+                  <div class="float-left" style="text-align: left; margin-left:30px">
+                    <h3>HTML Documents</h3>
+                    <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.
+                      <br>
+                      The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.
+                      <br>
+                      The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.
+                    </p>
+                  </div>
+                </div>
+                <center>
+                  <div class="row" style="margin-left:20px">
+                    <div class="card" style="width:500px;padding:30px; margin-bottom:50px; margin-top:50px">
+                      <img src="../img/html/basic-2.png" style="border:1px solid grey;margin-bottom:10px">
+                      <h3>HTML Headings</h3>
+                      <p>
+                        HTML headings are defined with the &lt;h1> to &lt;h6> tags.
+                          <br>
+                          &lt;h1> defines the most important heading. &lt;h6> defines the least important heading: 
+                      </p>
+                    </div>
+                    <div class="card" style="width:500px;padding:30px; margin-bottom:50px; margin-top:50px;margin-left:20px">
+                      <img src="../img/html/basic-3.png" style="border:1px solid grey;margin-bottom:10px">
+                      <h3>HTML Paragraphs</h3>
+                      <p>
+                        HTML paragraphs are defined with the <p> tag:
+                      </p>
+                    </div>
+                  </div>
+                </center>
+                
+              </div>      
+            
+
+
+
+              <!-- HTML MULTIMEDIA -->
+                <div class="card text-center" style="margin-top:50px">
+                  <div class="card-header" style="font-weight: bold;">
+                    HTML Multimedia
+                  </div>
+                  <div class="row">
+                      <div class="card" style="width: 18rem; margin: 70px">
+                          <div class="card-body">
+                            <h5 class="card-title">What is Multimedia?</h5>
+                            <p class="card-text">Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more. Web pages often contain multimedia elements of different types and formats.</p>
+                          </div>
+                      </div>
+                      <div class="card" style="width: 18rem; margin: 70px">
+                          <div class="card-body">
+                            <h5 class="card-title">Browser Support</h5>
+                            <p class="card-text">The first web browsers had support for text only, limited to a single font in a single color. Later came browsers with support for colors, fonts, images, and multimedia!</p>
+                          </div>
+                      </div>
+                      <div class="card" style="width: 18rem; margin: 70px">
+                          <div class="card-body">
+                            <h5 class="card-title">Multimedia Formats</h5>
+                            <p class="card-text">Multimedia elements (like audio or video) are stored in media files. The most common way to discover the type of a file, is to look at the file extension. Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.</p>
+                          </div>
+                      </div>
+                  </div>      
+              </div>
+
+              
+
+                
+                <div class="card text-center" style="margin-top:50px">
+                  <div class="card-header" style="font-weight: bold;">
+                    Common Multimedia Formats
+                  </div>
+                  <div class="row">
+                    <div class="card" style="width: 18rem;margin: 70px">
+                      <img src="../img/html/video-formats.jpg"class="card-img-top">
+                      <div class="card-body">
+                        <p class="card-text">There are many video formats out there. The MP4, WebM, and Ogg formats are supported by HTML. The MP4 format is recommended by YouTube.</p>
+                        <button id="showBackbtn" class="btn btn-primary">Show Back</button>
+                        <button id="showNextbtn" class="btn btn-primary">Show Next</button>
+                      </div>
+                    </div>
+                    <div id="table-container">
+                      <h3>Common Video Formats</h3>
+                      <table id="format-description-table" class="table table-bordered">
+                        <tbody id="tablebody"></tbody>
+                      </table>
+                    </div>
+                    <div class="row">
+                      <center>
+                        <div id="table-container" style="width:1100px;">
+                          <p class="h3">
+                            <button class="btn btn-primary" id="showBackbtn-audio">Show Back</button>
+                            &nbsp; Common Audio Formats &nbsp;
+                            <button class="btn btn-primary" id="showNextbtn-audio">Show Next</button>
+                          </p>
+                          <table id="format-description-table" class="table table-bordered">
+                            <tbody id="tablebody-audio"></tbody>
+                          </table>
+                          
+                        </div>
+                      </center>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+                <div class="card text-center" style="margin-top:50px">
+                  <div class="card-header" style="font-weight: bold;">
+                    HTML Video
+                  </div>
+                  <div class="row" style="padding:30px">
+                      <h3>How it Works</h3>
+                      <p>The controls attribute adds video controls, like play, pause, and volume. It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads. The source element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format. The text between the video and /video tags will only be displayed in browsers that do not support the video element.</p>
+                  </div>
+                  <center>
+                    <div class="row">
+                      <div class="card" style="width: 500px;margin: 70px;padding:10px">
+                        <video autoplay>
+                          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                          <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                          <h4>Example: With Audio</h4>
+                          <img src="../img/html/video-1.png">
+                        </div>
+                      </div>
+                      <div class="card" style="width: 500px;margin: 70px;padding:10px">
+                        <video autoplay muted>
+                          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                          <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                          <h4>Example: Without Audio</h4>
+                          <img src="../img/html/video-2.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+                        <video id="video1" height="200" autoplay muted>
+                          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                          <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                          <h4>HTML Video - Methods, Properties, and Events</h4>
+                          <p>The HTML DOM defines methods, properties, and events for the video element. This allows you to load, play, and pause videos, as well as setting duration and volume. There are also DOM events that can notify you when a video begins to play, is paused, etc.</p>
+                          <p>Example: Using Javasript</p>
+                          <button onclick="playPause()" class="btn btn-primary">Play/Pause</button>
+                          <button onclick="makeBig()" class="btn btn-secondary">Big</button>
+                          <button onclick="makeSmall()" class="btn btn-success">Small</button>
+                          <button onclick="makeNormal()" class="btn btn-dark">Normal</button>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+                          <h3>The Tags and their functions </h3>
+                        <div class="card-body">
+                          <img src="../img/html/video-3.png">
+                        </div>
+                      </div>
+                    </div>
+                  </center>
+                </div>
+                <div class="card text-center" style="margin-top:50px">
+                  <div class="card-header" style="font-weight: bold;">
+                    HTML Audio
+                  </div>
+                  <div class="row" style="padding:30px">
+                      <h3>How it Works</h3>
+                      <p>The controls attribute adds audio controls, like play, pause, and volume. The source element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. The text between the audio and /audio tags will only be displayed in browsers that do not support the audio element.</p>
+                  </div>
+                  <center>
+                    <div class="row">
+                      <div class="card" style="width: 450px;margin: 70px;padding:10px">
+                        <h4>Example: With Audio</h4>
+                        <img src="../img/html/audio-1.png">
+                        <div class="card-body">
+                          <audio controls autoplay>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
+                          </audio>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 500px;margin: 70px;padding:10px">
+                        <h4>Example: Without Audio</h4>
+                        <img src="../img/html/audio-2.png">
+                        <div class="card-body">
+                          <audio controls autoplay muted>
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
+                          </audio>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+                          <h3>The Tags and their functions </h3>
+                        <div class="card-body">
+                          <img src="../img/html/audio-3.png">
+                        </div>
+                      </div>
+                    </div>
+                  </center>
+                </div>
+                <div class="card text-center" style="margin-top:50px">
+                  <div class="card-header" style="font-weight: bold;">
+                    HTML YouTube Video
+                  </div>
+                  <div class="row" style="padding:30px">
+                      <h3>Struggling with Video Formats?</h3>
+                      <p>Converting videos to different formats can be difficult and time-consuming. An easier solution is to let YouTube play the videos in your web page.</p>
+                      <h3>YouTube Video Id</h3>
+                      <p>YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video. You can use this id, and refer to your video in the HTML code.</p>
+                    </div>
+                  <center>
+                    <div class="row">
+                      <div class="card" style="width: 450px;margin: 70px;padding:10px">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        <div class="card-body" style="text-align:left;">
+                          <h4>Playing a YouTube Video in HTML</h4>
+                          <p>To play your video on a web page, do the following:</p>
+                          <ol>
+                            <li>Upload the video to YouTube</li>
+                            <li>Take a note of the video id</li>
+                            <li>Define an ifram element in your web page</li>
+                            <li>Let the src attribute point to the video URL</li>
+                            <li>Use the width and height attributes to specify the dimension of the player</li>
+                          </ol>
+                          <img src="../img/html/youtube-1.png">
+                        </div>
+                      </div>
+                      <div class="card" style="width:600px;margin: 70px;padding:10px;">
+                        <iframe width="580" height="325"src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                        <div class="card-body">
+                          <h4>YouTube Autoplay + Mute</h4>
+                          <p>You can let your video start playing automatically when a user visits the page, by adding autoplay=1 to the YouTube URL. However, automatically starting a video is annoying for your visitors!</p>
+                          <img src="../img/html/youtube-2.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row card" style="width: 500px;padding:10px">
+                      <h3>YouTube Playlist</h3>
+                      <p>A comma separated list of videos to play (in addition to the original URL).</p>
+                    </div>
+                    <div class="row">
+                      <div class="card" style="width: 500px;margin: 70px;padding:10px">
+                        <iframe width="470px" height="265" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+                        <div class="card-body" style="text-align:left;">
+                          <h4>YouTube Loop</h4>
+                          <p>To play your video on a loop, do the following:</p>
+                          <ol>
+                            <li>Add loop=1 to let your video loop forever.</li>
+                            <li>Value 0 (default): The video will play only once.</li>
+                            <li>Value 1: The video will loop (forever).</li>
+                          </ol>
+                          <img src="../img/html/youtube-3.png" width="450">
+                        </div>
+                      </div>
+                      <div class="card" style="width:500px;margin: 70px;padding:10px;">
+                        <iframe width="480" height="265" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&controls=0"></iframe>
+                        <div class="card-body" style="text-align:left;">
+                          <h4>YouTube Controls</h4>
+                          <ol>
+                            <li>Add controls=0 to not display controls in the video player.</li>
+                            <li>Value 0: Player controls does not display.</li>
+                            <li>Value 1 (default): Player controls display</li>
+                          </ol>
+                          <img src="../img/html/youtube-4.png" width="400">
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </center>
+                </div>
+              </div>
+
+            </div>
+            
+            </div>
+            
+
+        
+
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+                <!-- Can Give some info Here -->
+            </p>
+          </section>
+          <section class="">
+            <h3>Reference Links</h3>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Link 1</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Link 1</a>
+                  </li>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Link 1</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Link 1</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright: <strong>Void</strong>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Html</li>
+            </ol>
+          </nav>
+        </div>
+      </footer>
+
+
+
+
+    <!-- BootStrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="html.js"></script>
+
+  </body>
+
+</html>
