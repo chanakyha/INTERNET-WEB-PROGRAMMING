@@ -1,0 +1,76 @@
+<!-- HTML YOUTUBE -->
+<div class="card text-center" style="margin-top:50px" id="html-youtube">
+    <div class="card-header" style="font-weight: bold;">
+      HTML YouTube Video
+    </div>
+    <div class="row" style="padding:30px">
+      <h3>Struggling with Video Formats?</h3>
+      <p>Converting videos to different formats can be difficult and time-consuming. An easier solution is to let
+        YouTube play the videos in your web page.</p>
+      <h3>YouTube Video Id</h3>
+      <p>YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video. You can use this id, and
+        refer to your video in the HTML code.</p>
+    </div>
+    <center>
+      <div class="row">
+        <div class="card" style="width: 450px;margin: 70px;padding:10px">
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          <div class="card-body" style="text-align:left;">
+            <h4>Playing a YouTube Video in HTML</h4>
+            <p>To play your video on a web page, do the following:</p>
+            <ol>
+              <li>Upload the video to YouTube</li>
+              <li>Take a note of the video id</li>
+              <li>Define an ifram element in your web page</li>
+              <li>Let the src attribute point to the video URL</li>
+              <li>Use the width and height attributes to specify the dimension of the player</li>
+            </ol>
+            <img src="../img/html/youtube-1.png">
+          </div>
+        </div>
+        <div class="card" style="width:600px;margin: 70px;padding:10px;">
+          <iframe width="580" height="325"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+          <div class="card-body">
+            <h4>YouTube Autoplay + Mute</h4>
+            <p>You can let your video start playing automatically when a user visits the page, by adding
+              autoplay=1 to the YouTube URL. However, automatically starting a video is annoying for your
+              visitors!</p>
+            <img src="../img/html/youtube-2.png">
+          </div>
+        </div>
+      </div>
+      <div class="row card" style="width: 500px;padding:10px">
+        <h3>YouTube Playlist</h3>
+        <p>A comma separated list of videos to play (in addition to the original URL).</p>
+      </div>
+      <div class="row">
+        <div class="card" style="width: 500px;margin: 70px;padding:10px">
+          <iframe width="470px" height="265"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+          <div class="card-body" style="text-align:left;">
+            <h4>YouTube Loop</h4>
+            <p>To play your video on a loop, do the following:</p>
+            <ol>
+              <li>Add loop=1 to let your video loop forever.</li>
+              <li>Value 0 (default): The video will play only once.</li>
+              <li>Value 1: The video will loop (forever).</li>
+            </ol>
+            <img src="../img/html/youtube-3.png" width="450">
+          </div>
+        </div>
+        <div class="card" style="width:500px;margin: 70px;padding:10px;">
+          <iframe width="480" height="265"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&controls=0"></iframe>
+          <div class="card-body" style="text-align:left;">
+            <h4>YouTube Controls</h4>
+            <ol>
+              <li>Add controls=0 to not display controls in the video player.</li>
+              <li>Value 0: Player controls does not display.</li>
+              <li>Value 1 (default): Player controls display</li>
+            </ol>
+            <img src="../img/html/youtube-4.png" width="400">
+          </div>
+        </div>
+      </div>
+  </div>
