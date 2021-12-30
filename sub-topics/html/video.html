@@ -1,47 +1,110 @@
-<!-- HTML AUDIO -->
-<div class="card text-center" style="margin-top:50px" id="html-audio">
-    <div class="card-header" style="font-weight: bold;">
-      HTML Audio
-    </div>
-    <div class="row" style="padding:30px">
-      <h3>How it Works</h3>
-      <p>The controls attribute adds audio controls, like play, pause, and volume. The source element allows you
-        to specify alternative audio files which the browser may choose from. The browser will use the first
-        recognized format. The text between the audio and /audio tags will only be displayed in browsers that do
-        not support the audio element.</p>
-    </div>
-    <center>
-      <div class="row">
-        <div class="card" style="width: 450px;margin: 70px;padding:10px">
-          <h4>Example: With Audio</h4>
-          <img src="../img/html/audio-1.png">
-          <div class="card-body">
-            <audio controls autoplay>
-              <source src="horse.ogg" type="audio/ogg">
-              <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-        <div class="card" style="width: 500px;margin: 70px;padding:10px">
-          <h4>Example: Without Audio</h4>
-          <img src="../img/html/audio-2.png">
-          <div class="card-body">
-            <audio controls autoplay muted>
-              <source src="horse.ogg" type="audio/ogg">
-              <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card" style="width: 90%;margin: 70px;padding:10px">
-          <h3>The Tags and their functions </h3>
-          <div class="card-body">
-            <img src="../img/html/audio-3.png">
-          </div>
-        </div>
-      </div>
-    </center>
+<!-- HTML VIDEO -->
+<div class="card text-center" style="margin-top:50px" id="html-video">
+  <div class="card-header" style="font-weight: bold;">
+    HTML Video
   </div>
+  <div class="row" style="padding:30px">
+    <h3>How it Works</h3>
+    <p>The controls attribute adds video controls, like play, pause, and volume. It is a good idea to always
+      include width and height attributes. If height and width are not set, the page might flicker while the
+      video loads. The source element allows you to specify alternative video files which the browser may choose
+      from. The browser will use the first recognized format. The text between the video and /video tags will
+      only be displayed in browsers that do not support the video element.</p>
+  </div>
+  <center>
+    <div class="row">
+      <div class="card" id="load-page" style="width: 500px;margin: 70px;padding:10px">
+        
+      </div>
+      <div class="card" id="load-page1" style="width: 500px;margin: 70px;padding:10px">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+        <video id="video1" height="200" autoplay muted>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card-body">
+          <h4>HTML Video - Methods, Properties, and Events</h4>
+          <p>The HTML DOM defines methods, properties, and events for the video element. This allows you to
+            load, play, and pause videos, as well as setting duration and volume. There are also DOM events that
+            can notify you when a video begins to play, is paused, etc.</p>
+          <p>Example: Using Javasript</p>
+          <button onclick="playPause()" class="btn btn-primary">Play/Pause</button>
+          <button onclick="makeBig()" class="btn btn-secondary">Big</button>
+          <button onclick="makeSmall()" class="btn btn-success">Small</button>
+          <button onclick="makeNormal()" class="btn btn-dark">Normal</button>
+        </div>
+      </div>
+      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+        <h3>The Tags and their functions </h3>
+        <div class="card-body">
+          <img src="../../img//html/video-3.png">
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
 
-  <script src="video.js"></script>
+
+<script>
+
+  document.getElementById('load-page').innerHTML = "<button id='load-page-btn' class='btn btn-primary'>Click Here to Load the page</button>";
+  document.getElementById('load-page1').innerHTML = "<button id='load-page-btn1' class='btn btn-primary'>Click Here to Load the page</button>";
+  
+  
+
+  document.getElementById('load-page-btn').onclick = function() {
+    var content = `<video autoplay>
+          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card-body">
+          <h4>Example: With Audio</h4>
+          <img src="../../img//html/video-1.png">
+        </div>`;
+    document.getElementById('load-page').innerHTML = content;
+  }
+  document.getElementById('load-page-btn1').onclick = function() {
+    var content = `<video autoplay muted>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card-body">
+          <h4>Example: Without Audio</h4>
+          <img src="../../img//html/video-2.png">
+        </div>`;
+    document.getElementById('load-page1').innerHTML = content;
+  }
+
+  
+  var myVideo = document.getElementById("video1");
+
+  function playPause() {
+    if (myVideo.paused)
+      myVideo.play();
+    else
+      myVideo.pause();
+  }
+
+  function makeBig() {
+    myVideo.height = 560;
+  }
+
+  function makeSmall() {
+    myVideo.height = 100;
+  }
+
+  function makeNormal() {
+    myVideo.height = 200;
+  }
+
+
+
+  
+</script>
