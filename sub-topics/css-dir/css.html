@@ -1,12 +1,12 @@
 <html>
 
 <head>
-  <title>HTML Concept</title>
+  <title>CSS</title>
   <!-- BootStrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Boot strap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Boot strap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <style>
     body {
       background-image: url('../../img/content-cover.jpg');
@@ -94,11 +94,17 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="../html/html.html">HTML</a>
+              <a class="nav-link" href="../html/html.html">HTML</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CSS</a>
+            <li class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CSS
             </li>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <button class="dropdown-item" onclick="addPage('css-introduction')" id="css-introduction">INTRODUCTION</button>
+              <button class="dropdown-item" onclick="addPage('css-syntax')" id="css-syntax">SYNTAX</button>
+              <button class="dropdown-item" onclick="addPage('css-html-adding')" id="css-html-adding">ADDING CSS INTO HTML</button>
+            </div>
             <li class="nav-item">
               <a class="nav-link" href="#">Javascript</a>
             </li>
@@ -125,9 +131,149 @@
 
 
       <div class="container" id="main-container">
-        
+        <section id="css-intro">
+          <div class="card text-center" style="margin-top:50px" id="CSS-INTRODUCTION">
+            <div class="card-header" style="font-weight: bold;">
+              Cascading Style Sheets
+            </div>
+            <center>
+              <div class="card" style="width: 750; margin: 70px 70px 70px 100px;">
+                <div class="card-body">
+                  <h5 class="card-title">What is CSS?</h5>
+                  <p class="card-text">
+                  <ul style="text-align:left;">
+                    <li>CSS stands for Cascading Style Sheets</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 750; margin: 70px 70px 70px 100px;">
+                <div class="card-body">
+                  <h5 class="card-title">Why is CSS required?</h5>
+                  <p class="card-text">
+                  <ul style="text-align:left;">
+                    <li>CSS is used to define styles for your web pages, including the design, layout and variations in
+                      display for different devices and screen sizes.</li>
+                    <li>CSS Solved a Big Problem <br> HTML was NEVER intended to contain tags for formatting a web page!
+                      <ul style="list-style-type: square">
+                        <li>HTML was created to describe the content of a web page, like:</li>
+                        &lt;h1>This is a heading&lt;/h1>
+                        <br>&lt;p>This is a paragraph.&lt;/p>
+                        <li>When tags like &lt;font>, and color attributes were added to the HTML 3.2 specification, it
+                          started a nightmare for web developers. Development of large websites, where fonts and color
+                          information were added to every single page, became a long and expensive process.</li>
+                        <li>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</li>
+                        <li>CSS removed the style formatting from the HTML page!</li>
+                      </ul>
+                    </li>
+                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li>External stylesheets are stored in CSS files</li>
+                    <li>CSS Saves a Lot of Work! <br>
+                      <ul style="list-style-type: square">
+                        <li>The style definitions are normally saved in external .css files.</li>
+                        <li>With an external stylesheet file, you can change the look of an entire website by changing
+                          just one file!</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="CSS-SYNTAX">
+            <div class="card-header" style="font-weight: bold;">
+              CSS Syntax
+            </div>
+            <center>
+              <div class="card" style="width: 750; margin: 70px 70px 70px 100px;">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Syntax</h5>
+                  <p class="card-text">A CSS rule consists of a selector and a declaration block.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 750; margin: 70px 70px 70px 100px;">
+                <div class="card-body">
+                  <h5 class="card-title">The Syntax Rule</h5>
+                  <p class="card-text">
+                    <img src="../../img/html/css-1.png" width="700">
+                  <ul style="text-align:left;">
+                    <li>The selector points to the HTML element you want to style.</li>
+                    <li>The declaration block contains one or more declarations separated by semicolons.</li>
+                    <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+                    <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded
+                      by curly braces.</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="CSS-HTML-ADDING">
+            <div class="card-header" style="font-weight: bold;">
+              How To Add CSS
+            </div>
+            <center>
+              <div class="card" style="width: 220; margin: 70px 70px 70px 100px;">
+                <div class="card-body">
+                  <h5 class="card-title">How To Add CSS</h5>
+                  <p class="card-text">Three Ways to Insert CSS</p>
+                  <ul style="text-align:left;">
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 400; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">External CSS</h5>
+                    <p class="card-text">
+                    <ul style="text-align:left;">
+                      <li>With an external style sheet, you can change the look of an entire website by changing just
+                        one file!</li>
+                      <li>Each HTML page must include a reference to the external style sheet file inside the &lt;link>
+                        element, inside the head section.</li>
+                      <li>An external style sheet can be written in any text editor, and must be saved with a .css
+                        extension.</li>
+                      <li>The external .css file should not contain any HTML tags.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 400; margin: 70px 20px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Internal CSS</h5>
+                    <p class="card-text">
+                    <ul style="text-align:left;">
+                      <li>An internal style sheet may be used if one single HTML page has a unique style.</li>
+                      <li>The internal style is defined inside the &lt;style> element, inside the head section.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 400; margin: 70px 20px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Inline CSS</h5>
+                    <p class="card-text">
+                    <ul style="text-align:left;">
+                      <li>An inline style may be used to apply a unique style for a single element.</li>
+                      <li>To use inline styles, add the style attribute to the relevant element. The style attribute can
+                        contain any CSS property.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+        </section>
       </div>
-      <button title="click to go up" class="btn btn-secondary" id="go-up"><i class="bi bi-arrow-up-circle-fill"></i></button>
+      <div title="click to go up" class="btn btn-secondary" id="go-up"><i class="bi bi-arrow-up-circle-fill"></i></div>
     </div>
 
   </div>
@@ -139,7 +285,7 @@
 
   </div>
 
-  
+
 
   <footer class="bg-dark text-center text-white">
     <div class="container p-4">
@@ -197,13 +343,13 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  
+
 
   <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <script src="html.js"></script>
+  <script src="css.js"></script>
 </body>
 
 </html>
