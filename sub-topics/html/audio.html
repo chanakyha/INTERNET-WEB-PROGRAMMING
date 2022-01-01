@@ -1,47 +1,33 @@
 <!-- HTML AUDIO -->
 <div class="card text-center" style="margin-top:50px" id="html-audio">
-    <div class="card-header" style="font-weight: bold;">
-      HTML Audio
-    </div>
-    <div class="row" style="padding:30px">
-      <h3>How it Works</h3>
-      <p>The controls attribute adds audio controls, like play, pause, and volume. The source element allows you
-        to specify alternative audio files which the browser may choose from. The browser will use the first
-        recognized format. The text between the audio and /audio tags will only be displayed in browsers that do
-        not support the audio element.</p>
-    </div>
-    <center>
-      <div class="row">
-        <div class="card" style="width: 450px;margin: 70px;padding:10px">
-          <h4>Example: With Audio</h4>
-          <img src="../../img//html/audio-1.png">
-          <div class="card-body">
-            <audio controls autoplay>
-              <source src="horse.ogg" type="audio/ogg">
-              <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-        <div class="card" style="width: 500px;margin: 70px;padding:10px">
-          <h4>Example: Without Audio</h4>
-          <img src="../../img//html/audio-2.png">
-          <div class="card-body">
-            <audio controls autoplay muted>
-              <source src="horse.ogg" type="audio/ogg">
-              <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card" style="width: 90%;margin: 70px;padding:10px">
-          <h3>The Tags and their functions </h3>
-          <div class="card-body">
-            <img src="../../img//html/audio-3.png">
-          </div>
-        </div>
-      </div>
-    </center>
+  <div class="card-header" style="font-weight: bold;">
+    HTML Audio
   </div>
+  <div class="row" style="padding:30px">
+    <h3>How it Works</h3>
+    <p>The controls attribute adds audio controls, like play, pause, and volume. The source element allows you
+      to specify alternative audio files which the browser may choose from. The browser will use the first
+      recognized format. The text between the audio and /audio tags will only be displayed in browsers that do
+      not support the audio element.</p>
+  </div>
+  <center>
+    <div class="row">
+      <div class="card" style="width: 450px;margin: 70px;padding:10px" id="card-2">
+        <button class="btn btn-primary" id="load-page-2">Click Here to Load the Page</button>
+      </div>
+      <div class="card" style="width: 500px;margin: 70px;padding:10px" id="card-1">
+        <button class="btn btn-primary" id="load-page-1">Click Here to Load the Page</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card" style="width: 90%;margin: 70px;padding:10px">
+        <h3>The Tags and their functions </h3>
+        <div class="card-body">
+          <img src="../../img//html/audio-3.png">
+        </div>
+      </div>
+    </div>
+  </center>
+</div>
 
-  <script src="video.js"></script>
+<script src="audio.js"></script>
