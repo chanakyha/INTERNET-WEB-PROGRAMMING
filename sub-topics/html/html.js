@@ -4,7 +4,7 @@ function addPage(thePage) {
     $("#main-container").load(thePage + ".html");
     document.title = "HTML | " + (thePage.toUpperCase().replaceAll("-"," "));
 
-    window.scrollTo(0,document.body.scrollHeight + 1200);
+    window.scrollTo(0,document.body.scrollHeight);
 }
 
 
