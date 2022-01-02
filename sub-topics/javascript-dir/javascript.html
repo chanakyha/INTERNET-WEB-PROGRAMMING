@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>CSS</title>
+  <title>JAVASCRIPT</title>
   <!-- BootStrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -99,9 +99,18 @@
             <li class="nav-item">
               <a class="nav-link" href="../css-dir/css.html">CSS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../javascript-dir/javascript.html">Javascript</a>
+            <li class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              JAVASCRIPT
             </li>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <button class="dropdown-item" onclick="addPage('js-introduction')"
+                id="js-introduction">INTRODUCTION</button>
+              <button class="dropdown-item" onclick="addPage('js-statements')" id="js-statements">STATEMENTS</button>
+              <button class="dropdown-item" onclick="addPage('js-syntax')" id="js-syntax">SYNTAX
+              <button class="dropdown-item" onclick="addPage('js-types')" id="js-types">JS TYPES
+              <button class="dropdown-item" onclick="addPage('js-frameworks')" id="js-frameworks">FRAMEWORKS
+            </div>
           </ul>
           <span class="navbar-text">
             <button class="btn btn-secondary">About Us</button>
@@ -125,9 +134,476 @@
 
 
       <div class="container" id="main-container">
+        <!-- JAVASCRIPT -->
+        <section id="html-introduction">
+          <div class="card text-center">
+            <div class="card-header" style="font-weight: bold;" id="JS-INTRODUCTION">
+              JAVASCRIPT
+            </div>
+            <center>
+              <div class="card-body">
+                <div class="card" style="width: 500px;padding:10px;text-align: left;">
+                  <h3>
+                    <center> What is JAVASCRIPT?</center>
+                  </h3>
+                  <p>
+                  <ul>
+                    <li>JavaScript is the world's most popular programming language.</li>
+                    <li>JavaScript is the programming language of the Web.</li>
+                    <li>JavaScript is easy to learn.</li>
+                    </p>
+                </div>
+              </div>
 
+              <div class="card" style="width: 100%;margin: 70px 70px 70px 0px;padding:10px">
+                <div class="card-body">
+                  <div class="row">
+                    <h3>What can JavaScript do?</h3>
+                    <table class="table-bordered" cellpadding="6">
+                      <tr>
+                        <th>Ability</th>
+                        <th>Snippet</th>
+                        <th>Example/Output</th>
+                      </tr>
+                      <tr>
+                        <td>JavaScript Can Change HTML Content</th>
+                        <td>document.getElementById("demo").innerHTML = "Hello JavaScript";</td>
+                        <td>
+                          <p>
+                          <div class="btn btn-primary"
+                            onclick='document.getElementById("change-content").innerHTML = "Hello JavaScript";'>Click
+                            Here to Change the below Content</div>
+                          </p>
+                          <p id="change-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem
+                            sequi cupiditate.
+                            Provident, explicabo quam. Consequatur autem quod ipsum vero repellendus quam, id eveniet,
+                            recusandae vel praesentium totam velit facere!</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>JavaScript Can Change HTML Attribute Values</th>
+                        <td>&lt;button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the
+                          light&lt;/button> <br>
+
+                          &lt;img id="myImage" src="pic_bulboff.gif" style="width:100px"> <br>
+
+                          &lt;button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the
+                          light&lt;/button>
+                        </td>
+                        <td>
+                          <div id="content">
+                            <div class="btn btn-primary"
+                              onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">
+                              Turn on the
+                              light</div>
+
+                            <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+                            <div class="btn btn-primary"
+                              onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">
+                              Turn off the
+                              light</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>JavaScript Can Change HTML Styles (CSS)</th>
+                        <td>document.getElementById("demo").style.fontSize = "35px";</td>
+                        <td>
+                          <p>
+                          <div class="btn btn-primary"
+                            onclick='document.getElementById("change-content-1").style.fontSize = "35px";'>Click
+                            Here to Change the style of the below Content</div>
+                          </p>
+                          <p id="change-content-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            autem
+                            sequi cupiditate.
+                            Provident, explicabo quam. Consequatur autem quod ipsum vero repellendus quam, id eveniet,
+                            recusandae vel praesentium totam velit facere!</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>JavaScript Can Hide HTML Elements</th>
+                        <td>document.getElementById("demo").style.display = "none";</td>
+                        <td>
+                          <p>
+                          <div class="btn btn-primary"
+                            onclick='document.getElementById("change-content-2").style.display = "none";'>Click
+                            Here to Hide the Below Content</div>
+                          </p>
+                          <p id="change-content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            autem
+                            sequi cupiditate.
+                            Provident, explicabo quam. Consequatur autem quod ipsum vero repellendus quam, id eveniet,
+                            recusandae vel praesentium totam velit facere!</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>JavaScript Can Show HTML Elements</th>
+                        <td>document.getElementById("demo").style.display = "block";</td>
+                        <td>
+                          <p>
+                          <div class="btn btn-primary"
+                            onclick='document.getElementById("change-content-3").innerHTML = "lorem ipsum dolor sit am lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit am lore m ";'>
+                            Click
+                            Here to Show below Content</div>
+                          </p>
+                          <p id="change-content-3"></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="JS-STATEMENTS">
+            <div class="card-header" style="font-weight: bold;">
+              JavaScript Statements
+            </div>
+            <center>
+              <div class="card-body">
+                <div class="row">
+                  <div class="card" style="width: 500px;padding:10px;margin: 0px 100px">
+                    <div class="card-body">
+                      <h3>
+                        <center>JavaScript Statements</center>
+                      </h3>
+                      <p>
+                        JavaScript statements are composed of:
+                      <ul style="text-align: left;">
+                        <li>Values</li>
+                        <li>Operators</li>
+                        <li>Expressions</li>
+                        <li>Keywords</li>
+                        <li>Comments</li>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 500px;padding:10px;">
+                    <div class="card-body">
+                      <h3>
+                        <center>Semicolons</center>
+                      </h3>
+                      <p>
+                      <ul style="text-align: left;">
+                        <li>Semicolons separate JavaScript statements.</li>
+                        <li>Add a semicolon at the end of each executable statement</li>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:50px">
+                  <div class="card" style="width: 90%;padding:10px;margin: 0px 80px">
+                    <h3>JavScripts Keywords</h3>
+                    <div class="card-body">
+                      <img src="../../img/html/js-1.png" width="1060">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="JS-SYNTAX">
+            <div class="card-header" style="font-weight: bold;">
+              JavaScript Syntax
+            </div>
+            <center>
+              <div class="card-body">
+                <div class="row">
+                  <div class="card" style="width: 500px;padding:10px;margin: 0px 100px">
+                    <h3>
+                      <center>JavaScript Syntax</center>
+                    </h3>
+                    <img src="../../img/html/js-2.png" width="420">
+                    <div class="card-body">
+                      <p>
+                        JavaScript syntax is the set of rules, how JavaScript programs are constructed
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 500px;padding:10px;padding-top:100px">
+                    <div class="card-body">
+                      <h3>
+                        <center>JavaScript Values</center>
+                      </h3>
+                      <p>
+                        The JavaScript syntax defines two types of values:
+                      <ul style="text-align: left;">
+                        <li>Fixed values</li>
+                        <li>Variable values</li>
+                      </ul>
+                      <p>Fixed values are called <strong>Literals</strong></p>
+                      <p>Variable values are called <strong>Variables</strong>.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:50px">
+                  <div class="card" style="width: 90%;padding:10px;margin: 0px 80px">
+                    <h3>The Various Syntaxs</h3>
+                    <div class="card-body">
+                      <table class="table-bordered" cellpadding="6">
+                        <tr>
+                          <th>The Rule</th>
+                          <th>Explanation</th>
+                          <th>Example</th>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Literals</td>
+                          <td>
+                            The two most important syntax rules for fixed values are:
+                            <ul style="text-align: left;">
+                              <li>Numbers are written with or without decimals:</li>
+                              <li>Strings are text, written within double or single quotes:</li>
+                            </ul>
+                          </td>
+                          <td>
+                            10.50 &nbsp; "John Doe" <br>
+                            1001 &nbsp; 'John Doe'
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Variables</td>
+                          <td>
+                            In a programming language, variables are used to store data values.
+                            <br>
+                            JavaScript uses the keywords var, let and const to declare variables.
+                            <br>
+                            An equal sign is used to assign values to variables.
+                            <br>
+                            In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+                          </td>
+                          <td>let x; x = 6;</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Operators</td>
+                          <td>JavaScript uses arithmetic operators ( + - * / ) to compute values:</td>
+                          <td>(5 + 6) * 10</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Expressions</td>
+                          <td>
+                            An expression is a combination of values, variables, and operators, which computes to a
+                            value.
+                            <br>
+                            The computation is called an evaluation.
+                            <br>
+                            For example, 5 * 10 evaluates to 50
+                          </td>
+                          <td>5 * 10 = 50</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Keywords</td>
+                          <td>
+                            JavaScript keywords are used to identify actions to be performed.
+                            <br>
+                            The let keyword tells the browser to create variables
+                          </td>
+                          <td>let x, y; x = 5 + 6; y = x * 10;</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Comments</td>
+                          <td>Not all JavaScript statements are "executed".
+                            <br>
+                            Code after double slashes // or between /* and */ is treated as a comment.
+                            <br>
+                            Comments are ignored, and will not be executed
+                          </td>
+                          <td>let x = 5; // I will be executed</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript Identifiers / Names</td>
+                          <td>
+                            Identifiers are JavaScript names.
+                            <br>
+                            Identifiers are used to name variables and keywords, and functions.
+                            <br>
+                            The rules for legal names are the same in most programming languages.
+                            <br>
+                            A JavaScript name must begin with:
+                            <ul>
+                              <li>A letter (A-Z or a-z)</li>
+                              <li>A dollar sign ($)</li>
+                              <li>Or an underscore ( _ )</li>
+                            </ul>
+                          </td>
+                          <td>let theVar = 5</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript is Case Sensitive</td>
+                          <td>
+                            All JavaScript identifiers are case sensitive.
+                            <br>
+                            The variables lastName and lastname, are two different variables
+                          </td>
+                          <td>let lastname, lastName;lastName = "Doe";lastname = "Peterson";</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="JS-TYPES">
+            <div class="card-header" style="font-weight: bold;">
+              JavaScript Types
+            </div>
+            <center>
+              <div class="card-body">
+                <div class="row" style="margin-top:50px">
+                  <div class="card" style="width: 90%;padding:10px;margin: 0px 80px">
+                    <h3>The Common Syntaxs</h3>
+                    <div class="card-body">
+                      <table class="table-bordered" cellpadding="6" width="1020">
+                        <tr>
+                          <th>Name</th>
+                          <th>Syntax</th>
+                        </tr>
+                        <tr>
+                          <td>IF ELSE Statements</td>
+                          <td>
+                            <pre>
+
+                              if ("condition") {
+                                // The Code
+                              } else {
+                                // The Code
+                              }
+                          </pre>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>FOR LOOP Statements</td>
+                          <td>
+                            <pre>
+
+                              for (var i=0;i<=5;i++) {
+                                // Execution Code
+                              }
+                          </pre>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>WHILE Statements</td>
+                          <td>
+                            <pre>
+
+                                while ("condition") {
+                                  // The code
+                                }
+                          </pre>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>DO WHILE LOOP</td>
+                          <td>
+                            <pre>
+                              do {
+                                // The Code
+                              } while ("condition");
+                            </pre>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>TRY CATCH STATEMENTS</td>
+                          <td>
+                            <pre>
+                              try {
+                                // the code
+                              } catch(err) {
+                                // when error
+                              }
+                            </pre>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>FOR EACH LOOP STATEMENTS</td>
+                          <td>
+                            <pre>
+                              forEach(element,key => array) {
+                                // The Code
+                              }
+                            </pre>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Array</td>
+                          <td>
+                            <pre>
+                              var arr = ["List1","List2","List3"];
+                            </pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px">
+            <div class="card-header" style="font-weight: bold;">
+              JavaScript Frameworks
+            </div>
+            <center>
+              <div class="card-body">
+                <div class="row" style="margin-top:50px">
+                  <div class="card" style="width: 40%;padding:10px;margin: 0px 400px" id="JS-FRAMEWORKS">
+                    <h3>JavaScript Frameworks</h3>
+                    <div class="card-body">
+                      <p class="card-text">
+                        A JavaScript library is a library of pre-written JavaScript code that allows for easier
+                        development of JavaScript-based applications, especially for AJAX and other web-centric
+                        technologies
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:50px">
+                  <div class="card" style="width: 70%;padding:10px;margin: 0px 200px">
+                    <h3>Top 5 Javascript Frameworks</h3>
+                    <div class="card-body">
+                      <table class="table-bordered" cellpadding="6" width="90%">
+                        <tr>
+                          <th>FrameWork Names</th>
+                          <th>Link to their Sites</th>
+                        </tr>
+                        <tr>
+                          <td>Angular</td>
+                          <td><a href="https://angular.io/">https://angular.io/</a></td>
+                        </tr>
+                        <tr>
+                          <td>React</td>
+                          <td><a href="https://reactjs.org/">https://getbootstrap.com/</a></td>
+                        </tr>
+                        <tr>
+                          <td>Bootstrap</td>
+                          <td><a href="https://reactjs.org/">https://reactjs.org/</a></td>
+                        </tr>
+                        <tr>
+                          <td>JQUERY</td>
+                          <td><a href="https://jquery.com/">https://jquery.com/</a></td>
+                        </tr>
+                        <tr>
+                          <td>Node.js</td>
+                          <td><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </center>
+          </div>
+        </section>
       </div>
-      <div title="click to go up" class="btn btn-secondary" id="go-up"><i class="bi bi-arrow-up-circle-fill"></i></div>
+      <div title="click to go up" onclick='window.scrollTo(0,0);' class="btn btn-secondary" id="go-up"><i class="bi bi-arrow-up-circle-fill"></i></div>
     </div>
 
   </div>
@@ -203,7 +679,13 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <script src="css.js"></script>
+  <script>
+    function addPage(thePage) {
+    document.title = "JS | " + (thePage.toUpperCase().replaceAll("-"," "));
+
+    document.getElementById(thePage.toUpperCase()).scrollIntoView();
+}
+  </script>
 </body>
 
 </html>
