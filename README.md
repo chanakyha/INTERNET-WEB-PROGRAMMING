@@ -1,12 +1,12 @@
 # SRM RMP - VAC Project
 
-**Team Name: ** Void
+***Team Name:* ** Void
 
-**Our Topic: ** INTERNET WEB PROGRAMMING
+***Our Topic:* ** INTERNET WEB PROGRAMMING
 
-**Site Live Preview: ** https://chanakyha.github.io/INTERNET-WEB-PROGRAMMING/
+***Site Live Preview:* ** https://chanakyha.github.io/INTERNET-WEB-PROGRAMMING/
 
-***Note:- ** This Website not Responsive so it cant be viewed in Mobiles, Tablets and Large Displays like T.V. This Website can only be viewed by a Laptop or an Desktop with resolution of *"1920 x 1080"*
+***Note:-***  This Website not Responsive so it cant be viewed in Mobiles, Tablets and Large Displays like T.V. This Website can only be viewed by a Laptop or an Desktop with resolution of *"1920 x 1080"*
 
 ## Project Description:-
 
