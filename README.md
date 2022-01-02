@@ -34,12 +34,12 @@ This Website explains what is Internet Web Programming and gives the details abo
 | ---- | --------- | ---------------------------- |
 | 1    | Chanakyha | https://github.com/chanakyha |
 | 2    | Rohan     | https://github.com/ROHAN-V   |
-| 3    |           |                              |
-| 4    |           |                              |
-| 5    |           |                              |
-| 6    |           |                              |
-| 7    |           |                              |
-| 8    |           |                              |
+| 3    | Adhitya   |                              |
+| 4    | Keertan   |                              |
+| 5    | Abhishek  |                              |
+| 6    | Sayantan  |                              |
+| 7    | Niteesh   |                              |
+| 8    | Suraj     |                              |
 
 ## About Us:-
 
