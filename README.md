@@ -33,7 +33,7 @@ This Website explains what is Internet Web Programming and gives the details abo
 | S.No | Name      | GitHub Profile Link          |
 | ---- | --------- | ---------------------------- |
 | 1    | Chanakyha | https://github.com/chanakyha |
-| 2    |           |                              |
+| 2    | Rohan     | https://github.com/ROHAN-V   |
 | 3    |           |                              |
 | 4    |           |                              |
 | 5    |           |                              |
