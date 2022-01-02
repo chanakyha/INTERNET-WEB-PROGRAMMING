@@ -101,9 +101,14 @@
               CSS
             </li>
             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <button class="dropdown-item" onclick="addPage('css-introduction')" id="css-introduction">INTRODUCTION</button>
+              <button class="dropdown-item" onclick="addPage('css-introduction')"
+                id="css-introduction">INTRODUCTION</button>
               <button class="dropdown-item" onclick="addPage('css-syntax')" id="css-syntax">SYNTAX</button>
-              <button class="dropdown-item" onclick="addPage('css-html-adding')" id="css-html-adding">ADDING CSS INTO HTML</button>
+              <button class="dropdown-item" onclick="addPage('css-html-adding')" id="css-html-adding">ADDING CSS INTO
+              <button class="dropdown-item" onclick="addPage('css-backgrounds')" id="css-backgrounds">BACKGROUNDS
+              <button class="dropdown-item" onclick="addPage('css-fonts')" id="css-fonts">FONTS
+              <button class="dropdown-item" onclick="addPage('css-layouts')" id="css-layouts">LAYOUTS
+                HTML</button>
             </div>
             <li class="nav-item">
               <a class="nav-link" href="../javascript-dir/javascript.html">Javascript</a>
@@ -266,6 +271,248 @@
                         contain any CSS property.</li>
                     </ul>
                     </p>
+                  </div>
+                </div>
+              </div>
+            </center>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="CSS-BACKGROUNDS">
+            <div class="card-header" style="font-weight: bold;">
+              CSS BACKGROUNDS
+            </div>
+            <center>
+              <div class="card" style="width: 420; margin: 70px 70px 70px;">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Backgrounds</h5>
+                  <p class="card-text">The CSS background properties are used to add background effects for elements.
+                    Some of the CSS background properties are:</p>
+                  <ul style="text-align:left;">
+                    <li>background-color</li>
+                    <li>background-image</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 400; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">CSS background-color</h5>
+                    <p class="card-text">The background-color property specifies the background color of an element.With
+                      CSS, a color is most often specified by:</p>
+                    <ul style="text-align:left;">
+                      <li>a valid color name - like "red"</li>
+                      <li>a HEX value - like "#ff0000"</li>
+                      <li>an RGB value - like "rgb(255,0,0)"</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card" style="width: 830; margin: 70px 20px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-1.png" width="780">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 420; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Transparency / Opacity</h5>
+                    <p class="card-text"><strong>Transparency Using "Opaacity" Attribute</strong></p>
+                    <p style="text-align: left;">Using CSS, the transparency of the element csm be using the 'opacity'
+                      attribute. When using the
+                      opacity property to add transparency to the background of an element, all of its child elements
+                      inherit the same transparency. This can make the text inside a fully transparent element hard to
+                      read.</p>
+                    <hr>
+                    <p class="card-text"><strong>Transparency Using RGBA</strong></p>
+                    <p style="text-align: left;">If you do not want to apply opacity to child elements, you can use an
+                      RGB color value with an
+                      alpha channel (RGBA) - which specifies the opacity for a color. An RGBA color value is specified
+                      with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully
+                      transparent) and 1.0 (fully opaque).</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 830; margin: 70px 20px 70px 0px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-2.png" width="780">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 420; margin: 70px 20px 70px 35px;">
+                  <div class="card-body" style="margin-top:100px">
+                    <h5 class="card-title">CSS background-image</h5>
+                    <p class="card-text">Other than color, CSS allows us to add an image as a background using the
+                      background-image property</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 830; margin: 70px 20px 70px 0px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-3.png" width="780">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="CSS-FONTS">
+            <div class="card-header" style="font-weight: bold;">
+              CSS FONTS
+            </div>
+            <center>
+              <div class="card" style="width: 450; margin: 70px 70px 70px;">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Fonts</h5>
+                  <p class="card-text">Using CSS, we can change the font of the webpage. It is important to choose the
+                    right font as it adds value to your text and can create a strong identity for your brand.In CSS, You
+                    specify the font of the text by:</p>
+                  <ul style="text-align:left;">
+                    <li>Using in available fonts</li>
+                    <li>linking a custom style sheet using Google Fonts</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 480; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Generic Font Families</h5>
+                    <p class="card-text">In CSS, there are five generic font familes:</p>
+                    <ul style="text-align:left;">
+                      <li><strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a
+                        sense of formality and elegance.</li>
+                      <li><strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a
+                        modern and minimalistic look.</li>
+                      <li><strong>Monospace</strong> fonts - here all the letters have the same fixed width. They create
+                        a mechanical look.</li>
+                      <li><strong>Cursive</strong> fonts imitate human handwriting.</li>
+                      <li><strong>Fantasy</strong> fonts are decorative/playful fonts.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card" style="width: 730; margin: 70px 20px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-4.png" width="680">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 420; margin: 200px 20px 200px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">The font-family Property</h5>
+                    <p class="card-text">in CSS, we use the font-family property to specifty the font of the element</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 830; margin: 70px 20px 70px 0px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-5.png" width="780">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 1220; margin: 70px 20px 70px 35px;">
+                  <img src="../../img/html/bg-6.png" width="1180" style="margin-top: 10px;">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">The font-size Property</h5>
+                    <p class="card-text" style="text-align:left">The font-size property sets the size of the text. Being
+                      able to manage the text
+                      size is important in web design. However, you should not use font size adjustments to make
+                      paragraphs look like headings, or headings look like paragraphs. Always use the proper HTML tags,
+                      like for headings and for paragraphs. The font-size value can be an absolute, or relative size.
+                    </p>
+                    <hr>
+                    <p><strong>Absolute Size: (px)</strong></p>
+                    <ul style="text-align:left">
+                      <li>Sets text to a specified size</li>
+                      <li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+                      </li>
+                      <li>Absolute size is useful when the physical size of the output is known</li>
+                    </ul>
+                    <p><strong>Relative Size: (em,%)</strong></p>
+                    <ul style="text-align:left">
+                      <li>Sets the size relative to surrounding elements</li>
+                      <li>allows a user to change the text size in browsers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card text-center" style="margin-top:50px" id="CSS-LAYOUTS">
+            <div class="card-header" style="font-weight: bold;">
+              CSS LAYOUT
+            </div>
+            <center>
+              <div class="card" style="width: 450; margin: 70px 70px 70px;">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Layout - The Position Property</h5>
+                  <p class="card-text">The position property specifies the type of positioning method used for an
+                    element. There are five different position values:</p>
+                  <ul style="text-align:left;">
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>sticky</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 480; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">position:static</h5>
+                    <p class="card-text" style="text-align:left">HTML elements are positioned static by default. Static
+                      positioned elements are
+                      not affected by the top, bottom, left, and right properties. An element with position: static; is
+                      not positioned in any special way; it is always positioned according to the normal flow of the
+                      page:</p>
+                    <hr>
+                    <h5 class="card-title">position:relative</h5>
+                    <p class="card-text" style="text-align:left">An element with position: relative; is positioned
+                      relative to its normal
+                      position. Setting the top, right, bottom, and left properties of a relatively-positioned element
+                      will cause it to be adjusted away from its normal position. Other content will not be adjusted to
+                      fit into any gap left by the element.</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 730; margin: 70px 20px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-7.png" width="680">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 480; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">position:absolute</h5>
+                    <p class="card-text" style="text-align:left">An element with position: absolute; is positioned
+                      relative to the nearest positioned ancestor. However; if an absolute positioned element has no
+                      positioned ancestors, it uses the document body, and moves along with page scrolling. Note:
+                      Absolute positioned elements are removed from the normal flow, and can overlap elements. Here is a
+                      simple example:</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 730; margin: 70px 20px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-8.png" width="680">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 480; margin: 70px 20px 70px 35px;">
+                  <div class="card-body">
+                    <h5 class="card-title">position: sticky</h5>
+                    <p class="card-text" style="text-align:left">An element with position: sticky; is positioned based
+                      on the user's scroll position. A sticky element toggles between relative and fixed, depending on
+                      the scroll position. It is positioned relative until a given offset position is met in the
+                      viewport - then it "sticks" in place (like position:fixed).</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 730; margin: 70px 20px;">
+                  <div class="card-body">
+                    <img src="../../img/html/bg-9.png" width="680">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card" style="width: 480;height:400px; margin: 70px 20px 70px 450px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Demo</h5>
+                    <iframe src="sticky.html" style="width:100%;height:300px;border:3px solid black"></iframe>
                   </div>
                 </div>
               </div>
